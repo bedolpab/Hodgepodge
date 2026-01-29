@@ -1,0 +1,17 @@
+===========================================================
+                       HDOGEPODGE
+                JUST PREPARING FOR A ROLE !
+===========================================================
+
+What is this? Well, this is my interview prep material. Why
+am I calling it Hodgepodge? Well, that's why, because I 
+honestly do not know what will end up here. However, let's 
+hope it plays into the next interview I take. It's all
+related somehow though, i think (just trust me).
+
+Oh, and I'll be writing them in Python, C, and Rust (trying).
+That's gonna be fun.
+
+
+
+
