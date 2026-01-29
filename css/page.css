@@ -1,0 +1,106 @@
+:root {
+    --bg: #000000;
+    --fg: #ffffff;
+    --dim: #888888;
+    --font: 'Space Mono', monospace;
+    --width: min(600px, 92vw);
+}
+
+* {
+    box-sizing: border-box;
+    cursor: crosshair;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--fg);
+    font-family: var(--font);
+    font-size: 12px; 
+    line-height: 1.6;
+    max-width: var(--width);
+    margin: 40px auto;
+    padding: 0;
+    -webkit-font-smoothing: none;
+}
+
+/* Meta / Back Button Area */
+.meta {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    color: var(--dim);
+    text-transform: uppercase;
+}
+
+.meta a {
+    color: var(--fg);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.meta a:hover {
+    text-decoration: underline;
+}
+
+/* Typography */
+h2 {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+    letter-spacing: 1px;
+}
+
+h4 {
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+p { 
+    margin-bottom: 20px; 
+    opacity: 0.9;
+}
+
+a { 
+    color: var(--fg); 
+    text-decoration: underline; 
+    opacity: 0.8;
+}
+
+a:hover { 
+    opacity: 1; 
+}
+
+ul, ol {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Images/Figures */
+.svg-item {
+    margin: 30px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #222;
+    padding: 10px;
+}
+
+.svg-item svg {
+    max-width: 100%;
+    height: auto;
+    fill: var(--fg);
+}

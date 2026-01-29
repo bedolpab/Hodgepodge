@@ -1,0 +1,162 @@
+:root {
+    --bg: #000000;
+    --fg: #ffffff;
+    --font: 'Space Mono', monospace;
+    --width: min(600px, 92vw);
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    cursor: crosshair;
+  }
+  
+  body {
+    background-color: var(--bg);
+    color: var(--fg);
+    font-family: var(--font);
+    font-size: 11px;
+    line-height: 1.25;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-font-smoothing: none;
+    overflow-y: auto; 
+  }
+  
+  .container {
+    width: var(--width);
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0; 
+  }
+  
+  /* --- Header --- */
+  header {
+    margin-bottom: 0.5rem;
+  }
+  
+  .name {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
+  
+  .sub {
+    font-size: 10px;
+    opacity: 0.7;
+    text-transform: uppercase;
+  }
+  
+  /* --- Navigation --- */
+  .links {
+    display: flex;
+    justify-content: flex-start; 
+    gap: 1rem; 
+    margin-bottom: 1.5rem;
+    font-size: 10px;
+    flex-wrap: wrap; 
+  }
+  
+  .links a {
+    color: var(--fg);
+    text-decoration: none;
+    font-weight: 700;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+  }
+  
+  .links a:hover {
+    opacity: 1;
+    text-decoration: underline;
+  }
+  
+  /* --- Data Grid --- */
+  .log {
+    display: flex;
+    flex-direction: column;
+    gap: 0px; 
+  }
+  
+  .row {
+    display: flex;
+    font-size: 11px;
+    justify-content: flex-start; 
+    align-items: baseline;
+    padding: 2px 0;
+    text-decoration: none;
+    color: var(--fg);
+    width: 100%;
+  }
+  
+  .row:hover .org,
+  .row:hover .role {
+    text-decoration: underline;
+  }
+  
+  .yr {
+    flex: 0 0 40px; 
+    opacity: 0.5;
+  }
+  
+  .org {
+    flex: 0 0 220px; 
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    padding-right: 5px; 
+  }
+  
+  .role {
+    flex: 1; 
+    text-align: right;
+    white-space: nowrap; 
+    opacity: 0.9;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* --- Mobile Responsive --- */
+  @media (max-width: 620px) {
+    body {
+      height: auto;
+      align-items: flex-start; 
+    }
+  
+    .row {
+      flex-direction: column; 
+      align-items: flex-start;
+      padding: 0;
+      margin-bottom: 12px; 
+      border-left: 1px solid #333; 
+      padding-left: 8px;
+    }
+  
+    .yr {
+      flex: unset;
+      width: 100%;
+      margin-bottom: 2px;
+      font-size: 10px;
+    }
+  
+    .org {
+      flex: unset;
+      width: 100%;
+      white-space: normal; 
+      margin-bottom: 2px;
+    }
+  
+    .role {
+      flex: unset;
+      width: 100%;
+      text-align: left; 
+      white-space: normal; 
+      opacity: 0.7;
+    }
+  }
